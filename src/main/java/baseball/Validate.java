@@ -3,6 +3,8 @@ package baseball;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static baseball.Constants.*;
+
 public class Validate {
 
     public void checkType(String input) {
@@ -16,7 +18,7 @@ public class Validate {
     }
 
     public void checkRange(List<Integer> numbers) {
-        if (numbers.size() != Constants.SIZE) {
+        if (numbers.size() != SIZE) {
             throw new IllegalArgumentException();
         }
     }
@@ -30,7 +32,7 @@ public class Validate {
     }
 
     private boolean isOutOfRange(int number) {
-        return !(Constants.MIN_RANGE <= number && number <= Constants.MAX_RANGE);
+        return !(MIN_RANGE <= number && number <= MAX_RANGE);
     }
 
     public void checkNumberDuplicate(List<Integer> numbers) {
@@ -40,7 +42,9 @@ public class Validate {
         }
     }
 
-    public void checkRetry() {
-
+    public void checkRetry(String input) {
+        if (!(input.equals(RETRY) || input.equals(END))) {
+            throw new IllegalArgumentException();
+        }
     }
 }
