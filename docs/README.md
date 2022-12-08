@@ -16,7 +16,7 @@
 - [ ] 3스트라이크이면 게임이 종료된다.
 - [x] 사용자에게 재시작 여부를 입력받을 수 있다. - InputView#readRetry();
   - [x] [예외] 1,2 이외의 문자가 입력되는 경우 예외가 발생한다. - Validate#checkRetry();
-- [ ] 게임 결과를 출력한다. - OutputView#printResult();
+- [x] 게임 결과를 출력한다. - OutputView#printResult();
 - [ ] 재시작 여부를 출력한다. - OutputView#printRetry();
 
 ---
