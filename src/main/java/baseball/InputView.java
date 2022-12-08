@@ -25,7 +25,11 @@ public class InputView {
         return numbers;
     }
 
-    public void readRetry() {
+    public String readRetry() {
+        String input = Console.readLine();
 
+        validate.checkRetry(input);
+
+        return input;
     }
 }
