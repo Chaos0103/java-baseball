@@ -5,7 +5,7 @@
 - [ ] 사용자에게 서로 다른 3자리 수를 입력받을 수 있다. - InputView#readNumbers(); 
   - [x] [예외] 숫자 이외의 문자가 입력되는 경우 예외가 발생한다. - Validate#checkType();
   - [x] [예외] 입력된 숫자가 3자리가 아니라면 예외가 발생한다. - Validate#checkRange();
-  - [ ] [예외] 입력된 숫자가 1부터 9까지의 수가 아니라면 예외가 발생한다. - Validate#checkNumberRange()
+  - [x] [예외] 입력된 숫자가 1부터 9까지의 수가 아니라면 예외가 발생한다. - Validate#checkNumberRange()
   - [ ] [예외] 입력된 숫자에 중복이 존재한다면 예외가 발생한다. - Validate#checkNumberDuplicate();
 - [ ] 컴퓨터 숫자(3자리)와 사용자 숫자(3자리)를 비교할 수 있다. - Referee#compare()
   - [ ] 몇 개의 숫자가 같은지 알 수 있다. - Judgment#correctCount()

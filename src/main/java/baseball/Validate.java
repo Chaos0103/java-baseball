@@ -20,8 +20,16 @@ public class Validate {
         }
     }
 
-    public void checkNumberRange() {
+    public void checkNumberRange(List<Integer> numbers) {
+        for (int number : numbers) {
+            if (isOutOfRange(number)) {
+                throw new IllegalArgumentException();
+            }
+        }
+    }
 
+    private boolean isOutOfRange(int number) {
+        return !(Constants.MIN_RANGE <= number && number <= Constants.MAX_RANGE);
     }
 
     public void checkNumberDuplicate() {
