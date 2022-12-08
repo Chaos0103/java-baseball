@@ -1,6 +1,7 @@
 package baseball;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Validate {
 
@@ -32,8 +33,11 @@ public class Validate {
         return !(Constants.MIN_RANGE <= number && number <= Constants.MAX_RANGE);
     }
 
-    public void checkNumberDuplicate() {
-
+    public void checkNumberDuplicate(List<Integer> numbers) {
+        List<Integer> target = numbers.stream().distinct().collect(Collectors.toList());
+        if (numbers.size() != target.size()) {
+            throw new IllegalArgumentException();
+        }
     }
 
     public void checkRetry() {
