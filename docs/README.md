@@ -2,7 +2,7 @@
 
 ## 기능 목록
 - [x] 1부터 9까지 서로 다른 수 3자리를 생성한다. - NumberGenerator#createRandomNumbers()
-- [ ] 사용자에게 서로 다른 3자리 수를 입력받을 수 있다. - InputView#readNumbers(); 
+- [x] 사용자에게 서로 다른 3자리 수를 입력받을 수 있다. - InputView#readNumbers(); 
   - [x] [예외] 숫자 이외의 문자가 입력되는 경우 예외가 발생한다. - Validate#checkType();
   - [x] [예외] 입력된 숫자가 3자리가 아니라면 예외가 발생한다. - Validate#checkRange();
   - [x] [예외] 입력된 숫자가 1부터 9까지의 수가 아니라면 예외가 발생한다. - Validate#checkNumberRange()
