@@ -21,15 +21,12 @@ public class Referee {
         if (strike == 0 && ball == 0) {
             return "낫싱";
         }
-
-        StringBuilder message = new StringBuilder();
-        if (ball != 0) {
-            message.append(ball).append("볼 ");
+        if (strike == 0) {
+            return ball + "볼";
         }
-        if (strike != 0) {
-            message.append(strike).append("스트라이크");
+        if (ball == 0) {
+            return strike + "스트라이크";
         }
-
-        return String.valueOf(message);
+        return ball + "볼 " + strike + "스트라이크";
     }
 }
