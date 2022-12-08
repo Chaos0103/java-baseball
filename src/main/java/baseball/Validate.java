@@ -1,5 +1,7 @@
 package baseball;
 
+import java.util.List;
+
 public class Validate {
 
     public void checkType(String input) {
@@ -12,8 +14,10 @@ public class Validate {
         return input.chars().allMatch(Character::isDigit);
     }
 
-    public void checkRange() {
-
+    public void checkRange(List<Integer> numbers) {
+        if (numbers.size() != Constants.SIZE) {
+            throw new IllegalArgumentException();
+        }
     }
 
     public void checkNumberRange() {
