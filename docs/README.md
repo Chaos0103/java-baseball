@@ -9,7 +9,7 @@
   - [x] [예외] 입력된 숫자에 중복이 존재한다면 예외가 발생한다. - Validate#checkNumberDuplicate();
 - [ ] 컴퓨터 숫자(3자리)와 사용자 숫자(3자리)를 비교할 수 있다. - Referee#compare()
   - [x] 몇 개의 숫자가 같은지 알 수 있다. - Judgment#correctCount()
-  - [ ] 특정 자리에 특정 숫자가 있는지 알 수 있다. - Judgment#hasPlace()
+  - [x] 특정 자리에 특정 숫자가 있는지 알 수 있다. - Judgment#hasPlace()
 - [ ] 숫자가 포함되어 있고 자리도 같으면 스트라이크이다.
 - [ ] 숫자가 포함되어 있지만 자리가 다르면 볼이다.
 - [ ] 숫자가 포함되어 있지 않으면 낫싱이다.
