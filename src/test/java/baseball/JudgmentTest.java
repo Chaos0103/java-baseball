@@ -24,6 +24,14 @@ class JudgmentTest {
         assertThat(count).isEqualTo(expected);
     }
 
+    @ParameterizedTest
+    @CsvSource({"0,1,true", "1,2,true", "2,3,true", "0,2,false"})
+    void hasPlace(int placeIndex, int playerNumber, boolean expected) {
+        boolean result = judgment.hasPlace(computerNumbers, placeIndex, playerNumber);
+
+        assertThat(result).isEqualTo(expected);
+    }
+
     private List<Integer> getNumbers(String input) {
         return Arrays.stream(input.split(""))
                 .map(Integer::parseInt)
